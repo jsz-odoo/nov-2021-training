@@ -4,6 +4,7 @@ from odoo import api, models
 
 class CustomReport(models.AbstractModel):
     _name = 'report.odoo_academy.report_session_document'
+    _description = 'Custom report for Session'
 
     def _get_report_values(self, docids, data=None):
         report = self.env['ir.actions.report']._get_report_from_name('odoo_academy.report_session_document')
